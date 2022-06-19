@@ -1,0 +1,52 @@
+
+.flex1{
+    padding: 0px;
+    margin:0px;
+    max-width: 300px;
+    max-height: 500px;
+    display: flex;
+}
+
+.item1{
+    
+    margin:5px;
+    padding: 5px;
+    color: white;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+
+.row li{
+    background-color: blue;
+    
+}
+.row{
+    flex-direction: row;
+}
+
+.row-reverse li{
+    background-color: red;
+    
+}
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.column li{
+    background-color: orangered;                
+}
+.column{
+    flex-direction: column;float: left;
+}
+
+.column-reverse li{
+    background-color: green;               
+}
+.column-reverse{
+    flex-direction: column-reverse;
+    float: right;
+}
