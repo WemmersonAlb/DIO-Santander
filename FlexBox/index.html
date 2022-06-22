@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Fundamentos FlexBox - display</title>
-        <style>
-            body{
-                max-width: 500px;
-            }
-            
-        </style>
-    </head>
-    <body>
-        <h1>Apredendo a usar o FlexBox</h1>
-        
-        <section class="flex1">
-            <header>
-                <h2>Flex-Direction</h2>
-            </header>
-            <ul class="flex1 row">
-                <li class="item1">1</li>
-                <li class="item1">2</li>
-                <li class="item1">3</li>
-            </ul>
-            <ul class="flex1 row-reverse">
-                <li class="item1">1</li>
-                <li class="item1">2</li>
-                <li class="item1">3</li>
-            </ul>
-            <ul class="flex1 column">
-                <li class="item1">1</li>
-                <li class="item1">2</li>
-                <li class="item1">3</li>
-            </ul>
-            <ul class="flex1 column-reverse">
-                <li class="item1">1</li>
-                <li class="item1">2</li>
-                <li class="item1">3</li>
-            </ul>
-        </section>
-        <section>
-            <header><h2>Flex-Wrap</h2></header>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox - Align-Itens</title>
+    <style>
+        .container{
+            display: flex;
+            max-width: 300px;
+            margin: 0;
+            padding: 0;
+            border: 2px solid black;
+        }
+        .item{
+            background-color: blueviolet;
+            color: white;
+            margin: 5px;
+            text-align: center;
+            flex:1;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        Center
+    </h2>
+    <section class="container center">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum item 2</div>
+        <div class="item">item 3</div>
+    </section>
+    <h2>
+        Stretch
+    </h2>
+    <section class="container stretch">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum item 2</div>
+        <div class="item">item 3</div>
+    </section>
 
-        </section>
-        
-    </body>
+</body>
 </html>
