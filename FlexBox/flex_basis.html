@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basis</title>
+    <style>
+        .content{
+            display: flex;
+            max-width: 300px;
+            margin: 5px 0;
+            border: 2px solid black;
+            flex: 1;
+        }
+        .item{
+            background-color: rgb(10, 61, 61);
+            color: white;
+            margin:5px;
+            text-align: center;
+        }
+        .basis{
+            flex-basis: 20px;
+        }
+        .fg{
+            flex-grow: 1;
+        }
+        body{
+            background: #cecece;
+        }
+        .fgd{
+            flex-grow: 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="content">
+        <div class="item basis fg">aa</div>
+        <div class="item basis fg">bb</div>
+        <div class="item basis fg">vv</div>
+        <div class="item basis fg">cc</div>
+        <div class="item basis fg">dd</div>
+        <div class="item basis fg">ee</div>
+        <div class="item basis fg">ff</div>
+    </section>
+    <section class="content">
+        <div class="item">aa</div>
+        <div class="item">bb</div>
+        <div class="item">vv</div>
+        <div class="item">cc</div>
+        <div class="item">dd</div>
+        <div class="item">ee</div>
+        <div class="item">ff</div>
+    </section>
+</body>
+</html>
