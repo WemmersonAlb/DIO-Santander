@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul li a{
+    text-decoration: none;
+}
+div img{
+    display: block;
+    width: 100%;
+}
+.flex-container{
+    display: flex;
+    margin: auto;
+    max-width: 900px;
+    width: 100%;
+}
+header{
+    background-color: #122a57;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+header .list-itens{
+    display: flex;
+    width: 100%;
+    max-width: 260px;
+    justify-content: space-between;
+    align-items: center;
+}
+header .menu{
+    justify-content: space-between;
+}
+header a:link{
+    color: white;
+    text-decoration: none;
+}
+header a:visited{
+    color: white;
+}
+header a:hover{
+    text-decoration: underline;
+}
+.apresentacao{
+    justify-content: space-between;
+    height: 100vh;
+    align-items: center;
+}
+.apresentacao .texto-apresentacao{
+    min-height: 200px;
+}
+.texto-apresentacao h1{
+    color: #122a57;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.texto-apresentacao a:link{
+    background-color:#122a57;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    width: 220px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.texto-apresentacao a:visited{
+    background-color:#122a57;
+    color: white;
+}
+.texto-apresentacao a:hover{
+    text-decoration: underline;
+}
+#quem-somos{
+    justify-content: space-between;
+    align-items: center;
+}
+#quem-somos h2{
+    font-size: 32px;
+    color: #122a57;
+    display: flex;
+    margin-bottom: 20px;
+}
+#quem-somos h2::before{
+    content: "";
+    height: 45px;
+    width: 6px;
+    background-color: #122a57;
+    margin-right: 5px;
+    position: relative;
+    border-radius: 2px;
+}
+#quem-somos p{
+    width: 90%;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+#quem-somos img{
+    width: 450px;
+}
+.container-externo{
+    background-color: #122a57;
+    color: white;
+    width: 100%;
+}
+#servicos{
+    flex-direction: column;
+    padding: 50px 0 100px 0;
+}
+#servicos h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.list-servicos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.item-servicos{
+    text-align: center;
+    
+}
+.item-servicos a{
+    width: 220px;
+    margin-top: 20px;
+    padding:  10px 50px 10px 50px;
+    font-size: 16px;
+}
+.item-servicos a:link{
+    text-decoration: none;
+    color:#122a57;
+    border-radius: 30px;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    background-color: white;
+    padding:  10px 50px 10px 50px;
+    margin-top: 30px;
+}
+.item-servicos a:hover{
+    text-decoration: underline;
+}
+.item-servicos a:visited{
+    color:#122a57;
+}
+.item-servicos p{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.item-servicos img{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
