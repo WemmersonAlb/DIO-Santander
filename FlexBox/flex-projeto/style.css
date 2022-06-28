@@ -61,7 +61,7 @@ header a:hover{
     font-size: 48px;
     margin-bottom: 10px;
 }
-.texto-apresentacao a:link{
+.btn{
     background-color:#122a57;
     color: white;
     text-align: center;
@@ -74,11 +74,11 @@ header a:hover{
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.texto-apresentacao a:visited{
-    background-color:#122a57;
-    color: white;
+.btn:visited{
+    background-color: #122a57;
+    color: #ffffff;
 }
-.texto-apresentacao a:hover{
+.btn:hover{
     text-decoration: underline;
 }
 #quem-somos{
@@ -162,4 +162,67 @@ header a:hover{
     width: 80%;
     margin: auto;
     margin-bottom: 20px;
+}
+#planos{
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 20px;
+}
+.list-plano{
+    display: flex;
+    align-items: flex-end;
+}
+.item-plano{
+    flex:1;
+    border: 5px solid #122a57;
+    margin-right: 20px;
+    padding: 30px 30px 30px 30px;
+    color: #122a57;
+    justify-content: center;
+}
+.item-plano ul{
+    list-style-type: square;
+}
+.item-plano h3{
+    font-size: 26px;
+    color: #122a57;
+    margin-bottom: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.item-plano h3::after{
+    content: "";
+    width: 230px;
+    background-color: #122a57;
+    height: 4px;
+    position: relative;
+    margin: 20px 0 12px 0;
+    border-radius: 20px;
+    
+}
+.item-plano li{
+    margin-left: 20px;
+    margin-bottom: 7px;
+}
+.item-plano a{
+    margin-top: 40px;
+}
+#planos h2{
+    font-size: 32px;
+    color: #122a57;
+    display: flex;
+    margin-bottom: 20px;
+}
+footer{
+    background-color: #122a57;
+    color: #ffffff;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+footer .footer{
+    justify-content: space-between;
+    
 }
